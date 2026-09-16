@@ -1,0 +1,187 @@
+/* Estiliza o campo de entrada utilizado para o filtro. */
+.input-filtro {
+
+    /* Faz o campo ocupar 100% da largura disponível. */
+    width: 100%;
+
+    /* Define a altura do campo. */
+    height: 60px;
+
+    /* Adiciona espaço acima do campo. */
+    margin-top: 15px;
+
+    /* Adiciona 10px de espaçamento interno
+       nos lados esquerdo e direito. */
+    padding: 0 10px;
+
+
+    /* Define a borda do campo. */
+    border: 1px solid #DCDCE6;
+
+    /* Arredonda os cantos do campo. */
+    border-radius: 5px;
+
+
+    /* Define a cor de fundo do campo. */
+    background: #ffffff;
+
+
+    /* Define o tamanho da fonte dentro do campo. */
+    font-size: 18px;
+
+    /* Define a cor do texto dentro do campo. */
+    color: #333333;
+
+
+    /* Faz com que o padding e a borda sejam incluídos
+       no cálculo da largura e altura do elemento. */
+    box-sizing: border-box;
+}
+
+
+/* Container principal da página de cadastro/edição de aluno. */
+.novo-aluno-container {
+
+    /* Ocupa toda a largura disponível. */
+    width: 100%;
+
+    /* Define a largura máxima do container. */
+    max-width: 1120px;
+
+    /* Define a altura como 100% da altura da tela. */
+    height: 100vh;
+
+    /* Centraliza o container horizontalmente. */
+    margin: 0 auto;
+
+
+    /* Ativa o Flexbox. */
+    display: flex;
+
+    /* Alinha os elementos verticalmente ao centro. */
+    align-items: center;
+
+    /* Distribui os elementos horizontalmente. */
+    justify-content: space-between;
+}
+
+
+/* Estiliza o elemento com a classe "content"
+   que está dentro do container principal. */
+.novo-aluno-container .content {
+
+    /* Ocupa toda a largura disponível. */
+    width: 100%;
+
+    /* Adiciona 96px de espaçamento interno. */
+    padding: 96px;
+
+    /* Define a cor de fundo da área de conteúdo. */
+    background: #F0F0F5;
+
+    /* Adiciona uma sombra ao redor do conteúdo. */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+
+    /* Arredonda os cantos do conteúdo. */
+    border-radius: 8px;
+
+
+    /* Ativa o Flexbox dentro do conteúdo. */
+    display: flex;
+
+    /* Distribui os elementos horizontalmente. */
+    justify-content: space-between;
+
+    /* Alinha os elementos verticalmente ao centro. */
+    align-items: center;
+
+}
+
+
+/* Seleciona as sections que estão dentro de .content. */
+.novo-aluno-container .content section {
+
+    /* Faz a section ocupar toda a largura disponível. */
+    width: 100%;
+
+    /* Define uma largura máxima para a section. */
+    max-width: 380px;
+}
+
+
+/* Estiliza a section que possui a classe "form". */
+.novo-aluno-container section.form {
+
+    /* Faz a section ocupar toda a largura disponível. */
+    width: 100%;
+
+    /* Define uma largura máxima de 350px. */
+    max-width: 350px;
+
+    /* Adiciona espaço à direita da section. */
+    margin-right: 30px;
+}
+
+
+/* Seleciona imagens dentro da section "form". */
+.novo-aluno-container section.form img {
+
+    /* Define a largura da imagem como 45% do elemento pai. */
+    width: 45%;
+
+    /* Centraliza a imagem horizontalmente através da margem automática. */
+    margin-left: auto;
+
+    /* Centraliza a imagem horizontalmente através da margem automática. */
+    margin-right: auto;
+
+    /* Faz a imagem ser tratada como um elemento de bloco. */
+    display: block;
+}
+
+
+/* Seleciona o h1 dentro da section que está dentro de .content. */
+.novo-aluno-container .content section h1 {
+
+    /* Define:
+       64px de margem acima,
+       0 nas laterais,
+       32px de margem abaixo. */
+    margin: 64px 0 32px;
+
+    /* Define o tamanho da fonte do título. */
+    font-size: 32px;
+}
+
+
+/* Seleciona os parágrafos dentro da section. */
+.novo-aluno-container .content section p {
+
+    /* Define o tamanho da fonte do parágrafo. */
+    font-size: 18px;
+
+    /* Define a cor do texto. */
+    color: #737380;
+
+    /* Define o espaçamento entre as linhas. */
+    line-height: 32px;
+}
+
+
+/* Seleciona o formulário dentro de .content. */
+.novo-aluno-container .content form {
+
+    /* Faz o formulário ocupar toda a largura disponível. */
+    width: 100%;
+
+    /* Define uma largura máxima de 450px. */
+    max-width: 450px;
+}
+
+
+/* Seleciona os campos input dentro do formulário. */
+.novo-aluno-container .content form input {
+
+    /* Adiciona 8px de espaço acima de cada campo. */
+    margin-top: 8px;
+}

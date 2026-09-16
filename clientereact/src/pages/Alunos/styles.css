@@ -1,0 +1,260 @@
+/* Container principal da página de alunos. */
+.aluno-container {
+    /* Define que o container ocupará 100% da largura disponível. */
+    width: 100%;
+
+    /* Define a largura máxima do container. */
+    max-width: 1200px;
+
+    /* Adiciona espaçamento interno nas laterais. */
+    padding: 0 25px;
+
+    /* Adiciona margem superior de 20px
+       e centraliza o container horizontalmente. */
+    margin: 20px auto;
+}
+
+
+/* Estiliza o cabeçalho da página. */
+.aluno-container header{
+    /* Coloca os elementos do cabeçalho lado a lado. */
+    display: flex;
+
+    /* Alinha os elementos verticalmente ao centro. */
+    align-items: center;
+}
+
+
+/* Estiliza o texto dentro do cabeçalho. */
+.aluno-container header span{
+    /* Define o tamanho da fonte. */
+    font-size: 20px;
+
+    /* Adiciona espaço à esquerda do texto. */
+    margin-left: 25px;
+}
+
+
+/* Estiliza o elemento strong dentro do span do cabeçalho. */
+.aluno-container header span strong{
+    /* Define a cor do texto em destaque. */
+    color: #333333;
+}
+
+
+/* Estiliza a imagem dentro do cabeçalho. */
+.aluno-container header img{
+    /* Define a altura da imagem. */
+    height: 50px;
+}
+
+
+/* Estiliza o link dentro do cabeçalho. */
+.aluno-container header a{
+    /* Define a largura do link. */
+    width: 250px;
+
+    /* Empurra o link para o lado direito. */
+    margin-left: auto;
+
+    /* Define a margem superior como zero. */
+    margin-top: 0;
+}
+
+
+/* Estiliza os botões que estão dentro do cabeçalho. */
+.aluno-container header button{
+    /* Define a altura do botão. */
+    height: 30px;
+
+    /* Define a largura do botão. */
+    width: 30px;
+
+    /* Define o espaçamento interno do botão. */
+    padding: 10px;
+
+    /* Arredonda os cantos do botão. */
+    border-radius: 5px;
+
+    /* Define uma borda para o botão. */
+    border: 1px solid #DCDCE6;
+
+    /* Deixa o fundo do botão transparente. */
+    background: transparent;
+
+    /* Adiciona espaço entre o botão e o elemento anterior. */
+    margin-left: 16px;
+
+    /* Faz a alteração da cor da borda acontecer gradualmente. */
+    transition: border-color 0.5s;
+}
+
+
+/* Define o comportamento do botão quando o mouse passa sobre ele. */
+.aluno-container header button:hover{
+    /* Altera a cor da borda quando o mouse passa sobre o botão. */
+    border-color: #201465;
+}
+
+
+/* Estiliza o título principal da página. */
+.aluno-container h1 {
+    /* Define o espaço acima do título. */
+    margin-top: 20px;
+
+    /* Define o espaço abaixo do título. */
+    margin-bottom: 24px;
+}
+
+
+/* Estiliza a lista de alunos. */
+.aluno-container ul {
+    /* Utiliza o sistema de layout Grid. */
+    display: grid;
+
+    /* Remove o espaçamento interno padrão da lista. */
+    padding: 0;
+
+    /* Divide a lista em duas colunas de tamanhos iguais. */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* Define o espaço entre os elementos da grade. */
+    gap: 35px;
+
+    /* Remove as bolinhas padrão da lista. */
+    list-style: none;
+}
+
+
+/* Estiliza cada aluno dentro da lista. */
+.aluno-container ul li {
+    /* Define a cor de fundo do card. */
+    background: #ffffff;
+
+    /* Define o espaçamento interno do card. */
+    padding: 20px;
+
+    /* Arredonda os cantos do card. */
+    border-radius: 10px;
+
+    /* Permite posicionar os botões dentro do card. */
+    position: relative;
+
+    /* Define uma altura mínima para o card. */
+    min-height: 120px;
+
+    /* Define o espaçamento vertical entre as linhas. */
+    line-height: 30px;
+}
+
+
+/* Estiliza os botões dentro dos cards dos alunos. */
+.aluno-container ul li button {
+    /* Permite posicionar o botão de forma específica. */
+    position: absolute;
+
+    /* Define a distância do botão em relação ao lado direito. */
+    right: 25px;
+
+    /* Define a distância do botão em relação ao topo. */
+    top: 25px;
+
+    /* Remove a borda padrão do botão. */
+    border: 0;
+
+    /* Deixa o fundo do botão transparente. */
+    background: transparent;
+}
+
+
+/* Seleciona o botão que aparece logo depois de outro botão. */
+.aluno-container ul li button + button {
+    /* Posiciona o segundo botão mais abaixo. */
+    top: 60px;
+}
+
+
+/* Define o comportamento dos botões quando o mouse passa sobre eles. */
+.aluno-container ul li button:hover {
+    /* Diminui a opacidade do botão. */
+    opacity: 0.8;
+}
+
+
+/* Estiliza os elementos strong dentro dos cards. */
+.aluno-container ul li strong{
+    /* Faz o elemento ocupar uma linha própria. */
+    display: block;
+
+    /* Adiciona espaço abaixo do elemento. */
+    margin-bottom: 16px;
+
+    /* Define a cor do texto. */
+    color: #41414D;
+}
+
+
+/* Seleciona um strong que aparece logo depois de um p. */
+.aluno-container ul li p + strong{
+    /* Adiciona espaço acima do strong. */
+    margin-top: 32px;
+}
+
+
+/* Estiliza os parágrafos dentro dos cards. */
+.aluno-container ul li p {
+    /* Define a cor do texto. */
+    color: #737380;
+
+    /* Define o espaçamento entre as linhas. */
+    line-height: 21px;
+
+    /* Define o tamanho da fonte. */
+    font-size: 16px;
+}
+
+
+/* Estiliza o campo utilizado para filtrar os alunos. */
+.aluno-container .input-filtro {
+    /* Faz o campo ocupar toda a largura disponível. */
+    width: 100%;
+
+    /* Define a altura do campo. */
+    height: 60px;
+
+    /* Adiciona espaço acima do campo. */
+    margin-top: 15px;
+
+    /* Adiciona espaçamento interno nas laterais. */
+    padding: 0 20px;
+
+
+    /* Define a borda do campo. */
+    border: 1px solid #DCDCE6;
+
+    /* Arredonda os cantos do campo. */
+    border-radius: 5px;
+
+
+    /* Define a cor de fundo do campo. */
+    background: #ffffff;
+
+
+    /* Define o tamanho do texto digitado. */
+    font-size: 18px;
+
+    /* Define a cor do texto digitado. */
+    color: #333333;
+
+
+    /* Faz com que padding e border sejam incluídos
+       no cálculo da largura total do elemento. */
+    box-sizing: border-box;
+}
+
+
+/* Estiliza os elementos <b> dentro do container de alunos. */
+.aluno-container b {
+    /* Define o texto como negrito. */
+    font-weight: bold;
+}

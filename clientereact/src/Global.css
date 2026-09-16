@@ -1,0 +1,140 @@
+/* Importa a fonte Roboto Condensed diretamente do Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Seleciona todos os elementos da página. */
+* {
+    /* Define a margem de todos os elementos. */
+    margin: 5;
+
+    /* Define o espaçamento interno de todos os elementos. */
+    padding: 5;
+
+    /* Define o contorno dos elementos. */
+    outline: 5;
+
+    /* Faz com que padding e border sejam incluídos
+       no cálculo da largura e altura do elemento. */
+    box-sizing: border-box;
+}
+
+
+/* Estiliza o elemento principal <body> da página. */
+body {
+
+    /* Define:
+       peso da fonte: 300
+       tamanho: 14px
+       família: Roboto
+       fonte alternativa: sans-serif */
+    font: 300 14px Roboto, sans-serif;
+
+    /* Define a cor de fundo de toda a página. */
+    background: #f0f0f5;
+
+    /* Melhora a renderização da fonte em navegadores WebKit. */
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Define a fonte utilizada nos campos
+   input, button e textarea. */
+input, button, textarea{
+
+    /* Define o peso, tamanho e família da fonte. */
+    font: 400 18px Roboto, sans-serif;
+}
+
+
+/* Estiliza todos os elementos <button>. */
+button {
+
+    /* Altera o cursor para uma mão ao passar
+       o mouse sobre o botão. */
+    cursor: pointer;
+}
+
+
+/* Estiliza os elementos input que estão dentro de um formulário. */
+form input {
+
+    /* Define a largura do campo. */
+    width: 100%;
+
+    /* Define a altura do campo. */
+    height: 60px;
+
+    /* Define a cor do texto digitado. */
+    color: #333333;
+
+    /* Define a borda do campo. */
+    border: 1px solid #dcdce6;
+
+    /* Arredonda os cantos do campo. */
+    border-radius: 8px;
+
+    /* Define o espaçamento interno do campo. */
+    padding: 0px;
+
+    /* Adiciona espaço acima do campo. */
+    margin-top: 16px;
+}
+
+
+/* Define o estilo dos elementos que possuem
+   a classe "button". */
+.button {
+
+    /* Faz o botão ocupar toda a largura disponível. */
+    width: 100%;
+
+    /* Define a altura do botão. */
+    height: 60px;
+
+    /* Define a cor de fundo do botão. */
+    background: #aaa9bd;
+
+    /* Remove a borda padrão. */
+    border: 0;
+
+    /* Arredonda os cantos do botão. */
+    border-radius: 8px;
+
+    /* Define a cor do texto. */
+    color: #333333;
+
+    /* Deixa o texto mais espesso. */
+    font-weight: 700;
+
+    /* Adiciona espaço acima do botão. */
+    margin-top: 16px;
+
+    /* Permite que o elemento seja tratado
+       como um bloco e também como link. */
+    display: inline-block;
+
+    /* Centraliza o texto horizontalmente. */
+    text-align: center;
+
+    /* Remove a decoração padrão de links. */
+    text-decoration: none;
+
+    /* Define o tamanho da fonte. */
+    font-size: 18px;
+
+    /* Define a altura da linha de texto.
+       Aqui também ajuda a centralizar o texto verticalmente. */
+    line-height: 60px;
+
+    /* Faz alterações no filtro acontecerem gradualmente. */
+    transition: filter 0.3s;
+}
+
+
+/* Define o comportamento do botão
+   quando o mouse passa sobre ele. */
+.button:hover {
+
+    /* Diminui o brilho do botão para 80%. */
+    filter: brightness(80%);
+}
